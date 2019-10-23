@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout1"
+    tools:context=".Permohonan">
+
+
+    <TextView
+        android:id="@+id/namaprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:textColor="#fff"
+        android:fontFamily="casual"
+        android:text="CapilKu" />
+
+
+    <TextView
+            android:id="@+id/textview_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:fontFamily="monospace"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittext_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#fff"
+            android:fontFamily="monospace"
+            android:hint="" >
+
+            <requestFocus />
+        </EditText>
+
+
+    <TextView
+        android:id="@+id/textview_ttl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempat Tanggal Lahir"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:fontFamily="monospace"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_ttl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#fff"
+        android:fontFamily="monospace"
+        android:hint="" >
+
+        <requestFocus />
+    </EditText>
+
+        <TextView
+            android:id="@+id/textview_kelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Jenis Kelamin"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:fontFamily="monospace"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup_kelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/kelamin_pria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="pria"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:fontFamily="monospace"/>
+
+            <RadioButton
+                android:id="@+id/kelamin_wanita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wanita"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:fontFamily="monospace"/>
+        </RadioGroup>
+
+    <TextView
+        android:id="@+id/textview_agama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agama"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:fontFamily="monospace"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_agama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#fff"
+        android:fontFamily="monospace"
+        android:hint="" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Status Perkawinan"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:fontFamily="monospace"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/kawin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Kawin"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:fontFamily="monospace"/>
+
+        <RadioButton
+            android:id="@+id/belum_kawin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Kawin"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:fontFamily="monospace"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textview_pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pekerjaan"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:fontFamily="monospace"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_pekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#fff"
+        android:fontFamily="monospace"
+        android:hint="" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textview_kewarganegaraan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Kewarganegaraan"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:fontFamily="monospace"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_kewarganegaraan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/warga_negara_indonesia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="WNI"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:fontFamily="monospace"/>
+
+        <RadioButton
+            android:id="@+id/warga_negara_asing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WNA"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:fontFamily="monospace"/>
+    </RadioGroup>
+
+
+    <Button
+            android:id="@+id/button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="daftar" />
+
+
+    </LinearLayout>
